@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #FEE8D6;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javachatappp.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="514.0" layoutY="183.0" text="Login" textFill="#686363">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="187.0" prefHeight="35.0" prefWidth="125.0" text="Java" textFill="#724747">
+         <font>
+            <Font name="System Bold" size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="232.0" text="Chat" textFill="#706a72">
+         <font>
+            <Font name="System Bold" size="62.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="354.0" layoutY="228.0" prefHeight="25.0" prefWidth="368.0" promptText="Username / Email" />
+      <PasswordField fx:id="password" layoutX="352.0" layoutY="263.0" prefHeight="25.0" prefWidth="368.0" promptText="Password" />
+      <Hyperlink fx:id="forgotpassword" layoutX="620.0" layoutY="292.0" onAction="#forgotpassword" text="Forgot Password?">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Hyperlink>
+      <Button fx:id="login" alignment="CENTER" layoutX="458.0" layoutY="314.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: #50C878;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutX="479.0" layoutY="359.0" text="New Here?" />
+      <Hyperlink fx:id="signup" layoutX="541.0" layoutY="355.0" onAction="#signup" text="SignUp!">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</Pane>

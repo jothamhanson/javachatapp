@@ -1,0 +1,20 @@
+ /*just incase you want to use the user id (_id) to create the chatroom 
+ you can incert this in the message class and work around the logic 
+ i haven't tested it yet but it should work (i think)
+ */
+
+ public Object getUserIdByUsername(String username) {
+        try {
+            MongoCollection<Document> userCollection = database.getCollection("chatusers");
+            Document userDoc = userCollection.find(Filters.eq("username", username)).projection(Projections.include("_id")).first();
+            if (userDoc == null) {
+                System.out.println("No user found for username: " + username);
+                return null;
+            }
+            System.err.println("user ID: " + userDoc.get("_id").toString());
+            return userDoc.get("_id");
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
