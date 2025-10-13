@@ -6,7 +6,7 @@
 ## 🚀 Features
 
 - 👥 **User List** — Loads all registered users from MongoDB asynchronously.  
-- 💬 **Chat Rooms** — Each chatroom is  created by combining sender and receiver usernames
+- 💬 **Chat Rooms** — chatrooms are created with the combination of the sender and receiver usernames
  ( `spiderman+hulk` is `hulk+spiderman`).  
 - 🧩 **Message Bubbles** — Displays messages with timestamps aligned  on sender.  
 - 📦 **MongoDB Storage** — Messages and users are stored in a MongoDB database.  
