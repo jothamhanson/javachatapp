@@ -65,7 +65,6 @@ public class SignupController implements Initializable {
             collection = database.getCollection("users");
              String hashedPassword = BCrypt.hashpw(passwordinput, BCrypt.gensalt());
             Document user = new Document("username", usernameinput)
-                    .append("password", passwordinput)
                     .append("hashedpassword", hashedPassword);
             passwordinput = null;
             password.clear();
