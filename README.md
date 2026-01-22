@@ -16,7 +16,7 @@
 
 getuserid is a .txt just incase you want to use their id's 
 in creating the chatrooms rathher then the username. 
-(should work if you tweak if a litle)
+(should work if you tweak it a litle)
 the "settings" page is a work in progress.
 best of luck! 
 ---
